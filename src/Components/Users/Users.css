@@ -1,0 +1,40 @@
+.users_table {
+  border-radius: 10px;
+  border-spacing: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+td , th{
+  padding: 1rem;
+}
+
+td {
+  text-align: center;
+}
+
+thead tr:nth-child(odd) , tbody tr:nth-child(even){
+  background-color: #dedede4a;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #88888858;
+}
+
+.status_text {
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+
+.un_completed {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.completed {
+  color: #0000ff;
+  border-color: #0000ff;
+}
