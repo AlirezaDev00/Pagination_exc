@@ -2,24 +2,26 @@
   border-radius: 10px;
   border-spacing: 0;
   overflow: hidden;
-  width: 100%;
 }
 
 td , th{
   padding: 1rem;
+  border-right: 1px solid #686868ac;
+  border-bottom: 1px solid #686868ac;
 }
 
 td {
   text-align: center;
 }
 
+
 thead tr:nth-child(odd) , tbody tr:nth-child(even){
-  background-color: #dedede4a;
+  background-color: #9999995d;
 }
 
 
 tbody tr:nth-child(odd) {
-  background-color: #88888858;
+  background-color: #a4a4a4ac;
 }
 
 .status_text {
@@ -29,12 +31,37 @@ tbody tr:nth-child(odd) {
 }
 
 
-.un_completed {
+.UnCompleted {
   color: #ff0000;
   border-color: #ff0000;
 }
 
-.completed {
+.Completed {
   color: #0000ff;
   border-color: #0000ff;
+}
+
+.Pending {
+  color: #ffff00;
+  border-color: #ffff00;
+}
+
+tr td:nth-child(3) {
+  padding: 1rem 3.5rem;
+}
+
+tr td:nth-child(4) {
+  padding: 1rem 3rem;
+}
+
+tr td:nth-child(1) {
+  padding: 1rem 2rem;
+}
+
+tr td:last-child , tr th:last-child  {
+  border-right: none;
+}
+
+#last_todo td{
+  border-bottom: none;
 }
