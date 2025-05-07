@@ -1,6 +1,6 @@
 import "./Users.css";
 
-export default function Users({ todos , start , end }) {
+export default function Users({ todos, start, end }) {
   const filtered_todos = todos.slice(start, end);
 
   return (
@@ -15,13 +15,20 @@ export default function Users({ todos , start , end }) {
       </thead>
       <tbody>
         {filtered_todos.map((todo) => (
-          <tr key={todo.id} id={todo.id === filtered_todos.length  ? "last_todo" : ""}>
+          <tr
+            key={todo.id}
+            id={todo.id === filtered_todos.length ? "last_todo" : ""}
+          >
             <td>{todo.id}</td>
-            <td>{todo.user_id}</td>
+            <td>{todo.userId}</td>
             <td>{todo.title.slice(0, 25) + "..."}</td>
             <td className="status">
-              <span className={`status_text ${todo.is_completed}`}>
-                {todo.is_completed}
+              <span
+                className={`status_text ${
+                  todo.completed ? "Completed" : "Pending"
+                } `}
+              >
+                {todo.completed ? "Completed" : "Pending"}
               </span>
             </td>
           </tr>

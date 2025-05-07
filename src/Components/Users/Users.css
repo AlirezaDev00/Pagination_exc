@@ -30,12 +30,6 @@ tbody tr:nth-child(odd) {
   border-radius: 10px;
 }
 
-
-.UnCompleted {
-  color: #ff0000;
-  border-color: #ff0000;
-}
-
 .Completed {
   color: #0000ff;
   border-color: #0000ff;
